@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from pixner.net/bitbetio/main/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 May 2023 13:02:37 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wecoach.AI</title>
+
+    <link rel="shortcut icon" href="../static/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../static/css/jquery-ui.css">
+    <link rel="stylesheet" href="../static/css/plugin/nice-select.css">
+    <link rel="stylesheet" href="../static/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="../static/css/plugin/slick.css">
+    <link rel="stylesheet" href="../static/css/arafat-font.css">
+    <link rel="stylesheet" href="../static/css/plugin/animate.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <!-- start preloader -->
+    <div class="preloader" id="preloader"></div>
+    <!-- end preloader -->
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+    <header class="header-section">
+        <div class="overlay">
+            <div class="container">
+                <div class="row d-flex header-area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="../static/images/logo.png" style="width: 200px;" class="logo" alt="logo">
+                        </a>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-content">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="/about">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/gallery">Gallery</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="/plans">Plans</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="/sports">Sports</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="right-area header-action d-flex align-items-center max-un">
+                                <button type="button" class="login" >
+                                    <a href="/login" >Login</a>
+                                </button>
+                                <button type="button" class="cmn-btn reg" >
+                                    <a href="/signup" >Sign Up</a>
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <!-- header-section end -->
+
+    <!-- Login Registration start -->
+    <div class="log-reg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="modal fade" id="loginMod">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-center">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <ul class="nav log-reg-btn justify-content-around">
+                                    <li class="bottom-area" role="presentation">
+                                        <button class="nav-link" id="regArea-tab" data-bs-toggle="tab"
+                                            data-bs-target="#regArea" type="button" role="tab" aria-controls="regArea"
+                                            aria-selected="false">
+                                            SIGN UP
+                                        </button>
+                                    </li>
+                                    <li class="bottom-area" role="presentation">
+                                        <button class="nav-link active" id="loginArea-tab" data-bs-toggle="tab"
+                                            data-bs-target="#loginArea" type="button" role="tab"
+                                            aria-controls="loginArea" aria-selected="true">
+                                            LOGIN
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="loginArea" role="tabpanel"
+                                        aria-labelledby="loginArea-tab">
+                                        <div class="login-reg-content">
+                                            <div class="modal-body">
+                                                <div class="head-area">
+                                                    <h6 class="title">Login Direetly With</h6>
+                                                    <div class="social-link d-flex align-items-center">
+                                                        <a href="javascript:void(0)" class="active"><i
+                                                                class="fab fa-facebook-f"></i></a>
+                                                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                                                        <a href="javascript:void(0)"><i
+                                                                class="fab fa-linkedin-in"></i></a>
+                                                        <a href="javascript:void(0)"><i
+                                                                class="fab fa-instagram"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-area">
+                                                    <form action="/gallery" method="POST">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="single-input">
+                                                                    <label for="logemail">Email</label>
+                                                                    <input type="text" id="logemail"
+                                                                        placeholder="Email Address">
+                                                                </div>
+                                                                <div class="single-input">
+                                                                    <label for="logpassword">Password</label>
+                                                                    <input type="text" id="logpassword"
+                                                                        placeholder="Email Password">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="remember-me">
+                                                                    <label
+                                                                        class="checkbox-single d-flex align-items-center">
+                                                                        <span class="left-area">
+                                                                            <span class="checkbox-area d-flex">
+                                                                                <input type="checkbox"
+                                                                                    checked="checked">
+                                                                                <span class="checkmark"></span>
+                                                                            </span>
+                                                                            <span
+                                                                                class="item-title d-flex align-items-center">
+                                                                                <span>Remember Me</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </label>
+                                                                    <a href="javascript:void(0)">Forgot Password</a>
+                                                                </div>
+                                                            </div>
+                                                            <span class="btn-border w-100">
+                                                                <button class="cmn-btn w-100">LOGIN</button>
+                                                            </span>
+                                                        </div>
+                                                    </form>
+                                                    <div class="bottom-area text-center">
+                                                        <p>Not a member ? <a href="javascript:void(0)" class="reg-btn">Register</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="regArea" role="tabpanel"
+                                        aria-labelledby="regArea-tab">
+                                        <div class="login-reg-content regMode">
+                                            <div class="modal-body">
+                                                <div class="head-area">
+                                                    <h6 class="title">Register On Bitbetio</h6>
+                                                    <div class="social-link d-flex align-items-center">
+                                                        <a href="javascript:void(0)" class="active"><i
+                                                                class="fab fa-facebook-f"></i></a>
+                                                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                                                        <a href="javascript:void(0)"><i
+                                                                class="fab fa-linkedin-in"></i></a>
+                                                        <a href="javascript:void(0)"><i
+                                                                class="fab fa-instagram"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-area">
+                                                    <form action="#">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="single-input">
+                                                                    <label for="regemail">Email</label>
+                                                                    <input type="text" id="regemail"
+                                                                        placeholder="Email Address">
+                                                                </div>
+                                                                <div class="single-input">
+                                                                    <label for="regpassword">Password</label>
+                                                                    <input type="text" id="regpassword"
+                                                                        placeholder="Email Password">
+                                                                </div>
+                                                                <div class="single-input">
+                                                                    <label>Country</label>
+                                                                    <select>
+                                                                        <option value="1">United States</option>
+                                                                        <option value="2">United Kingdom</option>
+                                                                        <option value="3">Canada</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="remember-me">
+                                                                    <a href="javascript:void(0)">Have a referral
+                                                                        code?</a>
+                                                                </div>
+                                                            </div>
+                                                            <span class="btn-border w-100">
+                                                                <button class="cmn-btn w-100">SIGN UP</button>
+                                                            </span>
+                                                        </div>
+                                                    </form>
+                                                    <div class="bottom-area text-center">
+                                                        <p>Already have an member ? <a href="javascript:void(0)"
+                                                                class="log-btn">Login</a></p>
+                                                    </div>
+                                                    <div class="counter-area">
+                                                        <div class="single">
+                                                            <div class="icon-area">
+                                                                <img src="../static/images/icon/signup-counter-icon-1.png"
+                                                                    alt="icon">
+                                                            </div>
+                                                            <div class="text-area">
+                                                                <p>25,179k</p>
+                                                                <p class="mdr">Bets</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single">
+                                                            <div class="icon-area">
+                                                                <img src="../static/images/icon/signup-counter-icon-2.png"
+                                                                    alt="icon">
+                                                            </div>
+                                                            <div class="text-area">
+                                                                <p>6.65 BTC</p>
+                                                                <p class="mdr">Total Won</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- Login Registration end -->
+
+
+
+    <!-- How it Works start -->
+    
+    <section class="how-it-works">
+        <p><br><br><br></p>
+        <div class="overlay pt-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-header text-center">
+                            <h5 class="sub-title">Gallery</h5>
+                            <h2 class="title"></h2>
+                            <p>Matchmaking service for athletes and coaches, leveraging AI-powered algorithms to connect individuals with compatible skills and interests.”</p>
+                         </div>
+                    </div>
+                </div>
+                </div>
+            </div> 
+        </div> 
+     </section> 
+
+        <!-- Banner Section -->
+        <!-- <section>
+            <div class="carousel banner" id="banner" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/images/header_bg_1.jpg"  alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    <!-- How it Works end -->
+        
+    <!-- <section id="gallery" class="p-3">
+        <div class="container">
+        
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card trainer-card">
+                    <div class="card mt-3">
+                        <img src="../static/images/gallery1.jpg" class="img-fluid" alt="">
+
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                        <img src="../static/images/gallery2.jpg" class="img-fluid" alt="">
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mt-3">
+                        <img src="../static/images/gallery3.jpg" class="img-fluid" alt="">
+
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </section> -->
+
+    <section id="trainers" class=" p-4 text-center text-teal">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <div class="card trainer-card text-dark">
+                        <div class="card-body">
+                            <img src="../static/images/gallery1.jpg"  alt="" class="img-responsive ">
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-md-3">
+                    <div class="card trainer-card text-dark">
+                        <div class="card-body">
+                            <img src="../static/images/gallery2.jpg" alt="" class="img-fluid ">
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-md-3">
+                    <div class="card trainer-card text-dark">
+                        <div class="card-body">
+                            <img src="../static/images/gallery3.jpg" alt="" class="img-fluid ">
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-md-3">
+                    <div class="card trainer-card text-dark">
+                        <div class="card-body">
+                            <img src="../static/images/gallery4.jpg" alt="" class="img-fluid ">
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   <br>
+    <!-- Footer Area Start -->
+    <footer class="footer-section">
+        <div class="container pt-120">
+            <!-- <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="newsletter">
+                        <div class="section-text text-center">
+                            <h5 class="sub-title">Subscribe Us</h5>
+                            <h3 class="title">For Newsletter</h3>
+                            <p>Subscribe to our newsletter to receive all the latest news and updates</p>
+                        </div>
+                        <form action="#">
+                            <div class="form-group d-flex align-items-center">
+                                <input type="text" placeholder="Enter your email Address">
+                                <button><img src="../static/images/icon/arrow-right-2.png" alt="icon"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> -->
+            <div class="footer-bottom-area pt-120">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="menu-item">
+                            <a href="index.html" class="logo">
+                                <img src="../static/images/logo.png" style="width: 200px;" alt="logo">
+                            </a>
+                            <ul class="footer-link">
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="terms-conditions.html">Terms of Services</a></li>
+                                <li><a href="privacy-policy.html">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="copyright">
+                            <div class="copy-area">
+                                <p> Copyright © <a href="index.html">Wecoach.AI</a> | Designed by
+                                    <a href="https://www.infoerasoftware.com/" class="auth">Info Era Software Services Pvt. Ltd.</a>
+                                </p>
+                            </div>
+                            <div class="social-link d-flex align-items-center">
+                                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                                <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!--==================================================================-->
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/jquery-ui.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/fontawesome.js"></script>
+    <script src="../static/js/plugin/slick.js"></script>
+    <script src="../static/js/plugin/jquery.nice-select.min.js"></script>
+    <script src="../static/js/plugin/jquery.downCount.js"></script>
+    <script src="../static/js/plugin/counter.js"></script>
+    <script src="../static/js/plugin/waypoint.min.js"></script>
+    <script src="../static/js/plugin/jquery.magnific-popup.min.js"></script>
+    <script src="../static/js/plugin/wow.min.js"></script>
+    <script src="../static/js/plugin/plugin.js"></script>
+    <script src="../static/js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from pixner.net/bitbetio/main/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 May 2023 13:03:24 GMT -->
+</html>

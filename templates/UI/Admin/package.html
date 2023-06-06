@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from pixner.net/bitbetio/main/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 May 2023 13:04:03 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wecoach.AI</title>
+
+    <link rel="shortcut icon" href="../../static/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../../static/css/jquery-ui.css">
+    <link rel="stylesheet" href="../../static/css/plugin/nice-select.css">
+    <link rel="stylesheet" href="../../static/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="../../static/css/plugin/slick.css">
+    <link rel="stylesheet" href="../../static/css/arafat-font.css">
+    <link rel="stylesheet" href="../../static/css/plugin/animate.css">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf_viewer.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <!-- start preloader -->
+    <div class="preloader" id="preloader"></div>
+    <!-- end preloader -->
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+    {% include "/UI/Admin/admin_header.html" %}
+    <!-- header-section end -->
+
+    <!-- Dashboard Content Section start -->
+    <section class="dashboard-content pt-120">
+        <div class="overlay">
+            {% include "/UI/Admin/sidebar.html"%}
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="dashboard-sidebar">
+                            <div class="single-item">
+                                <img src="../../static/images/profile-img-1.png" alt="images">
+                                <h5>Philip Dunn</h5>
+                                <p>ID: 32315145</p>
+                            </div>
+                            <div class="balance">
+                                <div class="single-item">
+                                    <img src="../../static/images/icon/dashboard-sidebar-icon-1.png" alt="images">
+                                    <h5>$5135.00</h5>
+                                    <p>Available Balance</p>
+                                </div>
+                                <div class="bottom-area d-flex align-items-center justify-content-between">
+                                    <a href="javascript:void(0)" class="mdr withdraw-btn">Withdraw</a>
+                                    <a href="javascript:void(0)" class="mdr deposit-btn">Deposit</a>
+                                </div>
+                            </div>
+                            <div class="single-item">
+                                <img src="../../static/images/icon/dashboard-sidebar-icon-2.png" alt="images">
+                                <h5>Need Help?</h5>
+                                <p class="mdr">Have questions? Our experts are here to help!.</p>
+                                <span class="btn-border">
+                                    <a href="contact.html" class="cmn-btn">Get Start Now</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-8">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="dashboard" role="tabpanel"
+                                aria-labelledby="dashboard-tab">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-6">
+                                        <div class="single-info">
+                                            <img src="../../static/images/icon/user-info-icon-1.png" alt="icon">
+                                            <div class="text-area">
+                                                <h4>12</h4>
+                                                <p class="mdr"> <a href="report_Coach.html">No. of Coaches</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6">
+                                        <div class="single-info">
+                                            <img src="../../static/images/icon/user-info-icon-1.png" alt="icon">
+                                            <div class="text-area">
+                                                <h4>100</h4>
+                                                <p class="mdr"> <a href="report_Student.html">No. of Students</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6">
+                                        <div class="single-info">
+                                            <img src="../../static/images/icon/user-info-icon-2.png" alt="icon">
+                                            <div class="text-area">
+                                                <h4>10</h4>
+                                                <p class="mdr"> <a href="">Total Matches</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p><br></p>
+                                    <div class="col-12">
+                                        <div class="tab-pane fade show active" id="setting" role="tabpanel"
+                                        aria-labelledby="setting-tab">
+                                        <div class="setting-tab">
+                                            <div class="setting-personal-details">
+                                                <h5>Package</h5>
+                                                <form action="/UI/Admin/package" method='POST'  enctype="multipart/form-data">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="single-input">
+                                                                <label for="perFname">Title</label>
+                                                                <input type="text" id="title"  name="title" placeholder="Enter Title">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="single-input">
+                                                                <label for="perLname">Duration</label>
+                                                                <input type="text" id="duration"name="duration" placeholder="Enter Duration">
+                                                            </div>
+                                                        </div>
+                                                         <div class="col-lg-12">
+                                                            <div class="single-input">
+                                                                <label for="birth">Description</label>
+                                                                <input type="text" id="description" name="description" placeholder="Enter Description">
+                                                            </div>
+                                                        </div>
+                                                    
+                                                        <!-- <div class="col-lg-12 ">
+                                                            <dl>
+                                                                <div class="col-md-2">
+                                                                    <b>File Upload</b>
+                                                                </div>
+                                                                
+                                                                <div class="col-md-9" >   
+                                                            
+                        
+                                                                    
+                                
+                                                                    <input type="file" name="files1[]" id="fileInput1" class="form-control" multiple>
+                                
+                                                                        
+                                                                </div>
+                                                            </dl>
+                                                        </div>--> 
+                                                        <div class="col-lg-12" style="text-align: center;">
+                                                            <span class="btn-border">
+                                                             <button class="cmn-btn">Submit</button>
+                                                            </span>
+                                                        </div>
+                                                        <!--<div class="col-lg-12" style="text-align: center;">
+                                                            <span class="btn-border">
+                                                                <input type="submit" name="submit" class="btn btn-primary" value="UPLOAD"/>
+					 
+                                                            </span>
+                                                        </div>-->
+                                                    </div>
+                                                    <script>
+                                                        $(document).ready(function(){
+                                                         // File type validation
+                                                            $("#fileInput1").change(function(){
+                                                                var fileLength = this.files1.length;
+                                                                var match= ["image/jpeg","image/png","image/jpg","image/gif"];
+                                                                var i;
+                                                                for(i = 0; i < fileLength; i++){ 
+                                                                    var file = this.files1[i];
+                                                                    var imagefile = file.type;
+                                                                    if(!((imagefile==match[0]) || (imagefile==match[1]) || (imagefile==match[2]) || (imagefile==match[3]))){
+                                                                        alert('Please select a valid image file (JPEG/JPG/PNG/GIF).');
+                                                                        $("#fileInput1").val('');
+                                                                        return false;
+                                                                    }
+                                                                }
+                                                            });
+                                                        });
+                                                    </script>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dashboard Content Section end -->
+
+    <!-- Betpop Up Modal start -->
+    <div class="betpopmodal">
+        <div class="modal fade" id="betpop-up" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xxl-8 col-xl-9 col-lg-11">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="top-item">
+                                        <a href="javascript:void(0)" class="cmn-btn firstTeam">Eagle will win</a>
+                                        <a href="javascript:void(0)" class="cmn-btn active draw">Draw</a>
+                                        <a href="javascript:void(0)" class="cmn-btn lastTeam">Paeek will win</a>
+                                    </div>
+                                    <div class="select-odds d-flex align-items-center">
+                                        <h6>Select Odds</h6>
+                                        <div class="d-flex in-dec-val">
+                                            <input type="text" value="1.5" class="InDeVal2">
+                                            <div class="btn-area">
+                                                <button class="plus2">
+                                                    <img src="../../static/images/icon/up-arrow.png" alt="icon">
+                                                </button>
+                                                <button class="minus2">
+                                                    <img src="../../static/images/icon/down-arrow.png" alt="icon">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mid-area">
+                                        <div class="single-area">
+                                            <div class="item-title d-flex align-items-center justify-content-between">
+                                                <span>Bet Value :</span>
+                                                <select>
+                                                    <option value="eth">ETH</option>
+                                                    <option value="eth">ETH</option>
+                                                    <option value="eth">ETH</option>
+                                                </select>
+                                            </div>
+                                            <div class="d-flex in-dec-val">
+                                                <input type="text" value="0.1" class="InDeVal1">
+                                                <div class="btn-area">
+                                                    <button class="plus">
+                                                        <img src="../../static/images/icon/up-arrow.png" alt="icon">
+                                                    </button>
+                                                    <button class="minus">
+                                                        <img src="../../static/images/icon/down-arrow.png" alt="icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-area quick-amounts">
+                                            <div class="item-title d-flex align-items-center">
+                                                <p>Quick Amounts</p>
+                                            </div>
+                                            <div class="input-item">
+                                                <button class="quickIn">0.005</button>
+                                                <button class="quickIn">0.025</button>
+                                                <button class="quickIn">0.1</button>
+                                                <button class="quickIn">0.5</button>
+                                                <button class="quickIn">2.5</button>
+                                            </div>
+                                        </div>
+                                        <div class="single-area smart-value">
+                                            <div class="item-title d-flex align-items-center">
+                                                <p class="mdr">Smart Contact Value</p>
+                                            </div>
+                                            <div class="contact-val d-flex align-items-center">
+                                                <h4>0.1103</h4>
+                                                <h5>ETH</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-area">
+                                        <div class="fee-area">
+                                            <p>Winner will get: <span class="amount">0.179</span> ETH</p>
+                                            <p class="fee">Escrow Fee: <span>5%</span></p>
+                                        </div>
+                                        <div class="btn-area">
+                                            <button>Make (0.1 ETH) Bet</button>
+                                        </div>
+                                        <div class="bottom-right">
+                                            <p>Game Closes:</p>
+                                            <p class="date-area">Mar <span>21,2021-1:00</span> Am</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Betpop Up Modal end -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-section">
+        <div class="container pt-120">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="newsletter">
+                        <div class="section-text text-center">
+                            <h5 class="sub-title">Subscribe Us</h5>
+                            <h3 class="title">For Newsletter</h3>
+                            <p>Subscribe to our newsletter to receive all the latest news and updates</p>
+                        </div>
+                        <form action="#">
+                            <div class="form-group d-flex align-items-center">
+                                <input type="text" placeholder="Enter your email Address">
+                                <button><img src="../../static/images/icon/arrow-right-2.png" alt="icon"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-area pt-120">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="menu-item">
+                            <a href="../../index.html" class="logo">
+                                <img src="../../static/images/logo.png" style="width: 200px;" class="logo" alt="logo">
+                            </a>
+                            <ul class="footer-link">
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="terms-conditions.html">Terms of Services</a></li>
+                                <li><a href="privacy-policy.html">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="copyright">
+                            <div class="copy-area">
+                                <p> Copyright © <a href="../../index.html">Wecoach.AI</a> | Designed by
+                                    <a href="https://www.infoerasoftware.com/" class="auth">Info Era Software Services Pvt. Ltd.</a>
+                                </p>
+                            </div>
+                            <div class="social-link d-flex align-items-center">
+                                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                                <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!--==================================================================-->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../static/js/jquery.min.js"></script>
+    <script src="../../static/js/jquery-ui.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <script src="../../static/js/fontawesome.js"></script>
+    <script src="../../static/js/plugin/slick.js"></script>
+    <script src="../../static/js/plugin/jquery.nice-select.min.js"></script>
+    <script src="../../static/js/plugin/jquery.downCount.js"></script>
+    <script src="../../static/js/plugin/counter.js"></script>
+    <script src="../../static/js/plugin/waypoint.min.js"></script>
+    <script src="../../static/js/plugin/jquery.magnific-popup.min.js"></script>
+    <script src="../../static/js/plugin/wow.min.js"></script>
+    <script src="../../static/js/plugin/plugin.js"></script>
+    <script src="../../static/js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from pixner.net/bitbetio/main/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 May 2023 13:04:26 GMT -->
+</html>
